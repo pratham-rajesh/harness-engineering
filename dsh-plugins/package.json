@@ -1,0 +1,12 @@
+{
+  "name": "dsh-plugins-workspace",
+  "private": true,
+  "type": "module",
+  "description": "Test runner for the two DeepSeek Harness plugins in this folder (no dependencies).",
+  "scripts": {
+    "test": "node --test second-brain/test/ tool-ledger/test/",
+    "make-patch": "node make-patch.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

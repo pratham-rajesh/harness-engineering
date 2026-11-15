@@ -1,0 +1,4 @@
+# second-brain bundle patch: mounts the plugin row. Host-only package (no browser half).
+- insert:
+    - id: second-brain
+      name: 'second-brain'

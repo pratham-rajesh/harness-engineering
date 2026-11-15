@@ -1,0 +1,16 @@
+# Free-model provider for DSH through OpenRouter (no spend: model ids end in ":free").
+# Source: DSH docs, "Add a custom model API" (docs/user/guide/providers.md): a custom pi-ai provider with
+# api: openai-completions. NOTE: a Cordis override replaces the WHOLE config of the `llm-pi-ai` row, so if your
+# profile already defines providers, copy them in here instead of overwriting them.
+# NOT RUN by the author (no key / DSH could not be launched in the build environment): verify in Settings -> Models.
+- id: llm-pi-ai
+  config:
+    providers:
+      openrouter:
+        apiKeyEnv: OPENROUTER_API_KEY
+        api: openai-completions
+        baseURL: https://openrouter.ai/api/v1
+        models:
+          - id: openrouter/free
+          - id: google/gemma-4-31b-it:free
+          - id: nvidia/nemotron-3-ultra-550b-a55b:free

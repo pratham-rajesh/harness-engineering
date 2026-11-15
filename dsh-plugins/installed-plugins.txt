@@ -1,0 +1,18 @@
+# Plugins used in Part B. Every name below was checked with `npm view <name>` on 2026-11-15
+# (name, version, description, license) -- none of them was installed or run in the build environment.
+# Install each one from the DSH web UI (Plugins page / the dshmarket plugin) or by adding a row to a patch.
+
+# --- third-party (npm) ---------------------------------------------------------------------------------------
+dshmarket                     1.73.19  MIT           visual plugin market: browse, search, one-click install community plugins
+dsh-find-plugin               0.4.0    MIT           find DSH plugins from inside the agent (GitHub `dsh-plugin` topic, ranked by stars)
+dsh-at-file                   0.6.3    MIT           Codex-style @path references in the web GUI (search workspace paths, no file injection)
+dsh-web-ui-notify             0.1.7    BSD-3-Clause  desktop notifications for approvals, questions and turn completion
+dsh-flyout-sidebar            0.1.12   MIT           sidebar for artifacts that can pop out into a larger tab
+@ychris12138/dsh-usage-stats  0.3.8    MIT           token usage, provider accounts, session cost estimates, budgets, exports
+
+# --- written for this assignment (this folder) ---------------------------------------------------------------
+second-brain                  0.1.0    MIT           markdown vault with [[wikilinks]] + backlinks: brain_save/read/search/list
+tool-ledger                   0.1.0    MIT           per-tool call quotas (pre-execute deny) + JSONL audit trail + tool_ledger summary
+
+# --- runtime ---------------------------------------------------------------------------------------------------
+@deepseek-ai/dsh              0.2.2-rc.1  MIT        the harness CLI: `dsh --profile web --patch <overlay> --no-open`
